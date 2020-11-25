@@ -1,4 +1,5 @@
 from enum import Enum
+import cv2
 
 class CocoPart(Enum):
     Nose = 0#鼻子
@@ -35,3 +36,8 @@ CocoColors = [[255, 0, 0], [255, 85, 0], [255, 170, 0], [255, 255, 0], [170, 255
               [0, 255, 85], [0, 255, 170], [0, 255, 255], [0, 170, 255], [0, 85, 255], [0, 0, 255], [85, 0, 255],
               [170, 0, 255], [255, 0, 255], [255, 0, 170], [255, 0, 85]]
 
+def read_imgfile(path,width=None,height=None):
+    val_image = cv2.imread(path,cv2.IMREAD_COLOR)
+    if width is not None and height is not None:
+        val_image = cv2.resize(val_image,(width,height))
+    return val_image

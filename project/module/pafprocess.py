@@ -2,7 +2,6 @@ import importlib
 
 pkg = __name__.rpartition('.')[0]
 mname = '.'.join((pkg, '_pafprocess')).lstrip('.')
-print(mname)
 _pafprocess = importlib.import_module(mname)
 _swig_property = property
 

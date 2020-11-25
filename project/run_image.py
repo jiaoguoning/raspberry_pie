@@ -1,5 +1,5 @@
 print('加载模块中......')
-from module.tool import read_imgfile
+from module.common import read_imgfile
 from module.estimator import TfPoseEstimator
 import cv2
 from PIL import Image
