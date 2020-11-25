@@ -4,6 +4,7 @@ from module.estimator import TfPoseEstimator
 import cv2
 from PIL import Image
 import os
+print('模块加载完成......')
 
 print('开始运行......')
 def show_image(args):
