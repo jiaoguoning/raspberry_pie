@@ -1,1 +1,0 @@
-window["hzv3"]["pid"] = {"user":null,"locale":"zh-CN","preference":null};
