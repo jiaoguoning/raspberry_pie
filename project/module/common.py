@@ -1,7 +1,7 @@
 from enum import Enum
 import cv2
 
-class CocoPart(Enum):
+class CocoPart(Enum):  #人体特征点
     Nose = 0#鼻子
     Neck = 1#脖子
     RShoulder = 2#右肩
@@ -22,20 +22,19 @@ class CocoPart(Enum):
     LEar = 17
     Background = 18#背景
 
+
 CocoPairs = [
     (1, 2), (1, 5), (2, 3), (3, 4), (5, 6), (6, 7), (1, 8), (8, 9), (9, 10), (1, 11),
     (11, 12), (12, 13), (1, 0), (0, 14), (14, 16), (0, 15), (15, 17), (2, 16), (5, 17)
 ]   # = 19
 CocoPairsRender = CocoPairs[:-2]
-# CocoPairsNetwork = [
-#     (12, 13), (20, 21), (14, 15), (16, 17), (22, 23), (24, 25), (0, 1), (2, 3), (4, 5),
-#     (6, 7), (8, 9), (10, 11), (28, 29), (30, 31), (34, 35), (32, 33), (36, 37), (18, 19), (26, 27)
-#  ]  # = 19
-
+#身体每个部位对应的颜色
 CocoColors = [[255, 0, 0], [255, 85, 0], [255, 170, 0], [255, 255, 0], [170, 255, 0], [85, 255, 0], [0, 255, 0],
               [0, 255, 85], [0, 255, 170], [0, 255, 255], [0, 170, 255], [0, 85, 255], [0, 0, 255], [85, 0, 255],
               [170, 0, 255], [255, 0, 255], [255, 0, 170], [255, 0, 85]]
 
+
+#从path路径读取图片并返回，只涉及run_image.py的运行
 def read_imgfile(path,width=None,height=None):
     val_image = cv2.imread(path,cv2.IMREAD_COLOR)
     if width is not None and height is not None:

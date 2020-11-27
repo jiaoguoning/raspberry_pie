@@ -5,36 +5,24 @@ import numpy as np
 '''smoother.py'''
 def layer(op):
     def layer_decorated(self, *args, **kwargs):
-        # Automatically set a name if not provided.
         name = kwargs.setdefault('name', self.get_unique_name(op.__name__))
-        # Figure out the layer inputs.
-        if len(self.terminals) == 0:
-            raise RuntimeError('No input variables found for layer %s.' % name)
-        elif len(self.terminals) == 1:
-            layer_input = self.terminals[0]
-        else:
-            layer_input = list(self.terminals)
-        # Perform the operation and get the output.
+        layer_input = self.terminals[0]
         layer_output = op(self, layer_input, *args, **kwargs)
-        # Add to layer LUT.
         self.layers[name] = layer_output
-        # This output is now the input for the next layer.
         self.feed(layer_output)
-        # Return self for chained calls.
         return self
-
     return layer_decorated
 
 
 class Smoother(object):
     def __init__(self, inputs, filter_size, sigma, heat_map_size=0):
-        self.inputs = inputs
-        self.terminals = []
-        self.layers = dict(inputs)
-        self.filter_size = filter_size
-        self.sigma = sigma
-        self.heat_map_size = heat_map_size
-        self.setup()
+        self.inputs = inputs  #{‘data’:self.tensor_heatMat_up}
+        self.terminals = []   # []
+        self.layers = dict(inputs) #{‘data’:self.tensor_heatMat_up}
+        self.filter_size = filter_size   #25
+        self.sigma = sigma      #3
+        self.heat_map_size = heat_map_size   #0
+        self.setup()    #
 
     def setup(self):
         self.feed('data').conv(name='smoothing')
@@ -48,10 +36,7 @@ class Smoother(object):
         self.terminals = []
         for fed_layer in args:
             if isinstance(fed_layer, str):
-                try:
-                    fed_layer = self.layers[fed_layer]
-                except KeyError:
-                    raise KeyError('Unknown layer name fed: %s' % fed_layer)
+                fed_layer = self.layers[fed_layer]
             self.terminals.append(fed_layer)
         return self
 
@@ -78,17 +63,19 @@ class Smoother(object):
 
     @layer
     def conv(self,
-             input,
-             name,
+             input, #self.tensor_heatMat_up
+             name,  # smoothing
              padding='SAME'):
         # Get the number of channels in the input
         if self.heat_map_size != 0:
             c_i = self.heat_map_size
         else:
-            c_i = input.get_shape().as_list()[3]
+            #input = Tensor("upsample_heatmat:0", shape=(?, ?, ?, 19), dtype=float32)
+            c_i = input.get_shape().as_list()[3]   #c_i = 19
         # Convolution for a given input and kernel
+        #深度可分离卷积
         convolve = lambda i, k: tf.nn.depthwise_conv2d(i, k, [1, 1, 1, 1], padding=padding)
         with tf.compat.v1.variable_scope(name) as scope:
             kernel = self.make_gauss_var('gauss_weight', self.filter_size, self.sigma, c_i)
             output = convolve(input, kernel)
-        return output
+        return output  #Tensor("smoothing/depthwise:0", shape=(?, ?, ?, 19), dtype=float32)
