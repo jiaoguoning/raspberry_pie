@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Windows/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_camera.py" afterDir="false" />
-    </list>
+    <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +191,7 @@
       <workItem from="1606304252732" duration="2852000" />
       <workItem from="1606307240550" duration="3462000" />
       <workItem from="1606451920309" duration="11085000" />
-      <workItem from="1606543754223" duration="229000" />
+      <workItem from="1606543754223" duration="675000" />
     </task>
     <servers />
   </component>
