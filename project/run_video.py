@@ -8,7 +8,7 @@ print('模块加载完成......')
 
 '''运行部分'''
 print('开始运行......')
-def show_video(args,video_label):
+def show_video(args):
     # 获取w,h
     w, h = [int(x) for x in args['resize'].split('x')]
     # 创建TfPoseEstimator对象
@@ -18,13 +18,6 @@ def show_video(args,video_label):
     cam = cv2.VideoCapture(args['video'])
     ret_val, image = cam.read()
     count = 0
-    #写出到.mp4文件
-    ret_val, image = cam.read()
-    shape = (image.shape[1],image.shape[0])
-    fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-    print(shape)
-    videoWrite = cv2.VideoWriter('./resoure/video/模型标记视频/'+video_label, fourcc, 20.0, shape)
-    Humans = None
     while ret_val :
         time1 = time.time()
         if count%2 == 0:
@@ -32,21 +25,17 @@ def show_video(args,video_label):
             image = TfPoseEstimator.draw_humans(image, humans)
             Humans = humans
             cv2.imshow('tf-pose-estimation result', image)   #显示标记结果
-            videoWrite.write(image)  #输出到.mp4文件
             print('fps:',time.time()-time1)
         else:
-            image = TfPoseEstimator.draw_humans(image, Humans)
             cv2.imshow('tf-pose-estimation result', image)  # 显示标记结果
-            videoWrite.write(image)  # 输出到.mp4文件
         count += 1
         cv2.waitKey(1)
         ret_val, image = cam.read()
-    videoWrite.release()
     cv2.destroyAllWindows()
     print('视频关闭......')
     print('一共%d帧画面'%count)
 
-def video(model_name,video_name,video_label):
+def video(model_name,video_name):
     model_path = './resoure/graph/'
     video_path = './resoure/video/原始视频/'
     model = os.listdir(model_path)
@@ -57,11 +46,11 @@ def video(model_name,video_name,video_label):
                 'resize': '432x368',
                 'resize_out_ratio':2.0,
                 'camera': 0}
-        show_video(args,video_label)
+        show_video(args)
     else:
         print('模型名称错误')
 
 #模型地址，原视频地址，保存视频的名称
-video('mobilenet_v2_small','广播体操.mp4','广播体操_small.avi')
+video('mobilenet_v2_small','广播体操.flv')
 
 print('运行完成......')

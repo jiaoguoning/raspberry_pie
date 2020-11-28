@@ -2,79 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/pdf/干系人登记册-周仕隆.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/pdf/核心团队说明-焦国宁.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/pdf/里程碑进度计划-周仕隆.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/pdf/项目章程-周仕隆.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/word/干系人登记册-周仕隆.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/word/核心团队说明-焦国宁.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/word/里程碑进度计划-周仕隆.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/word/项目章程-周仕隆.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/启动过程/分工说明.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/产品愿景和商业机会-焦国宁.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/产品构思-周仕隆.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/技术分析-周仕隆.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/用户分析-焦国宁.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/资源需求估计-焦国宁.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/问题描述-焦国宁.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/pdf/风险估计-焦国宁.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/产品愿景和商业机会-焦国宁.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/产品构思-周仕隆.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/技术分析-周仕隆.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/用户分析-焦国宁.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/资源需求估计-焦国宁.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/问题描述-焦国宁.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/word/风险估计-焦国宁.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/分工说明.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/extra/data.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/extra/data.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/extra/data.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/extra/data.3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5700/57008483/v2_qjxk2z.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5700/57008909/v2_qjxk8q.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5700/57009018/v2_qjxkab.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5700/57009084/v2_qjxkb1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5701/57017074/v2_qjxn3t.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5701/57017903/v2_qjxnec.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57021933/v2_qjxoxq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57022184/v2_qjxp1m.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57022234/v2_qjxp2b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57022289/v2_qjxp35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57022389/v2_qjxp4l.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029482/v2_qjxtlu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029526/v2_qjxtmy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029535/v2_qjxtn8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029566/v2_qjxto1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029585/v2_qjxtoo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029591/v2_qjxtoy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029808/v2_qjxtxk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029849/v2_qjxtxt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029878/v2_qjxty6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029894/v2_qjxtyq.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029906/v2_qjxtz7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5702/57029916/v2_qjxtzj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5711/57111295/v2_qk02k6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/uploads4/images/5711/57112954/v2_qk0nl5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/custom.03d005d54504bdd2791bc2f63e6f46e3.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/dora.eb81a2a5e38fbd30ea9ce661fcf1220d.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/font-awesome.fee66e712a8a08eef5805a46892932ad.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/material.012cf6a10129e2275d79d6adac7f3b02.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/mb-icons.fabc1dac04c0abb197bcabb1df65ec0b.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/preview-related-0e3c25c3db4101447d45.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/preview-related-dae49d26594febcae4c0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/preview-related-e2fe20bf8cea73c65956.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/preview-related-edaf369bffd4fb09f8f2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/vendor-0319ed7282836d162ca6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/vendor-46bb926091ec06410bad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/vendor-e722ad4faa2d59ea86be.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../doc/项目论证/界面原型-周仕隆，焦国宁/webpack/webpack-runtime-f8b781982d2033a26cfd.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/动作比较模块.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/导出视频.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tf_pose.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tf_pose.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resoure/video/dance.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resoure/video/原始视频/广播体操.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resoure/video/模型标记视频/广播体操_small.avi" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_video.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,9 +44,97 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.动作比较模块">
+    <configuration name="导出视频" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/导出视频.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="动作比较模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动作比较模块.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="动作比较模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动作比较模块.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="动作比较模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_pose" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动作比较模块.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_pose" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,28 +157,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_camera.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="run_image (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_pose" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,28 +171,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/run_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="run_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.动作比较模块" />
+        <item itemvalue="Python.导出视频" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.run_image (1)" />
-        <item itemvalue="Python.run_camera" />
         <item itemvalue="Python.run_video" />
-        <item itemvalue="Python.run_image" />
+        <item itemvalue="Python.run_image (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -272,6 +250,9 @@
       <workItem from="1606544700410" duration="126000" />
       <workItem from="1606544864215" duration="593000" />
       <workItem from="1606545470597" duration="3113000" />
+      <workItem from="1606552260626" duration="5596000" />
+      <workItem from="1606561087997" duration="4934000" />
+      <workItem from="1606566963474" duration="3346000" />
     </task>
     <servers />
   </component>
@@ -296,48 +277,53 @@
     </state>
     <state x="676" y="105" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1606295205952" />
     <state x="713" y="122" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1606466532536" />
-    <state width="1398" height="97" key="GridCell.Tab.0.bottom" timestamp="1606549532154">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1606570622939">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1042" height="157" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606465866987" />
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606570622939" />
     <state width="1398" height="97" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1398" height="97" key="GridCell.Tab.0.center" timestamp="1606549532154">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1606570622939">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1042" height="157" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1606465866987" />
+    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1606570622939" />
     <state width="1398" height="97" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1398" height="97" key="GridCell.Tab.0.left" timestamp="1606549532154">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1606570622939">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1042" height="157" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1606465866987" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1606570622939" />
     <state width="1398" height="97" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1398" height="97" key="GridCell.Tab.0.right" timestamp="1606549532154">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1606570622939">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1042" height="157" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1606465866987" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1606570622939" />
     <state width="1398" height="97" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state x="38" y="6" key="SettingsEditor" timestamp="1606548111470">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="36" y="5" key="SettingsEditor" timestamp="1606552852477">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="36" y="5" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606305258036" />
+    <state x="36" y="5" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606552852477" />
     <state x="38" y="6" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1606548111470" />
-    <state x="31" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1606544134233">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="29" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1606566963867">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606451959872" />
+    <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606566963867" />
     <state x="31" y="224" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1606544134233" />
+    <state x="512" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606563023435">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="512" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1606563023435" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tf_pose$run.coverage" NAME="run Coverage Results" MODIFIED="1606276639919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$run_video.coverage" NAME="run_video Coverage Results" MODIFIED="1606466762584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tf_pose$test.coverage" NAME="test Coverage Results" MODIFIED="1606283488520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
+    <SUITE FILE_PATH="coverage/project$run_video.coverage" NAME="run_video Coverage Results" MODIFIED="1606556518259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$main.coverage" NAME="main Coverage Results" MODIFIED="1606567707050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/project$.coverage" NAME="动作比较模块 Coverage Results" MODIFIED="1606570528917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606466699651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$run_camera.coverage" NAME="run_camera Coverage Results" MODIFIED="1606544711301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$run_image__1_.coverage" NAME="run_image (1) Coverage Results" MODIFIED="1606545525082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
-    <SUITE FILE_PATH="coverage/tf_pose$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606296192174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$main.coverage" NAME="main Coverage Results" MODIFIED="1606549523592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
     <SUITE FILE_PATH="coverage/tf_pose$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606289937519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606452909268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tf_pose$test.coverage" NAME="test Coverage Results" MODIFIED="1606283488520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
     <SUITE FILE_PATH="coverage/tf_pose$pafprocess.coverage" NAME="pafprocess Coverage Results" MODIFIED="1606283519419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
+    <SUITE FILE_PATH="coverage/tf_pose$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606296192174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$run_image__1_.coverage" NAME="run_image (1) Coverage Results" MODIFIED="1606545525082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
+    <SUITE FILE_PATH="coverage/project$run_camera.coverage" NAME="run_camera Coverage Results" MODIFIED="1606544711301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
