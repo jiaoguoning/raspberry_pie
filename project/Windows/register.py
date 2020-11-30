@@ -1,14 +1,21 @@
 import sys
+import Windows.main_body as ma
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap, QPainter, QColor, QFont, QIcon
+from PyQt5 import QtCore,QtGui,QtWidgets
+from PyQt5.QtCore import Qt,pyqtSlot,QCoreApplication
+from PyQt5.QtGui import QPixmap, QPainter, QColor, QFont, QIcon,QActionEvent
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QApplication, QLabel, QDesktopWidget, QHBoxLayout, QFormLayout, \
-    QPushButton, QLineEdit
+    QPushButton, QLineEdit,QAction,QMessageBox
 
 
 class LoginForm(QWidget):
     def __init__(self):
         super().__init__()
+        self.user = list()#储存用户密码
+        with open('user_name.txt','r') as f:  #读入用户账户和密码信息
+            line = f.readlines()
+            for i in line:
+                self.user.append(i.rstrip())
         self.initUI()
 
     def initUI(self):
@@ -52,27 +59,33 @@ class LoginForm(QWidget):
         logolb.setPixmap(logopix_scared)
         logolb.setAlignment(Qt.AlignCenter)
         hbox.addWidget(logolb, 1)
+
         # 添加右侧表单
         fmlayout = QFormLayout()
         lbl_workerid = QLabel("用户名")
         lbl_workerid.setFont(QFont("Microsoft YaHei"))
         led_workerid = QLineEdit()
+        self.username = led_workerid
         led_workerid.setFixedWidth(270)
         led_workerid.setFixedHeight(38)
 
         lbl_pwd = QLabel("密码")
         lbl_pwd.setFont(QFont("Microsoft YaHei"))
         led_pwd = QLineEdit()
+        self.password = led_pwd
         led_pwd.setEchoMode(QLineEdit.Password)
         led_pwd.setFixedWidth(270)
         led_pwd.setFixedHeight(38)
 
         btn_login = QPushButton("登录")
+        self.btn = btn_login
         btn_login.setFixedWidth(270)
         btn_login.setFixedHeight(40)
         btn_login.setFont(QFont("Microsoft YaHei"))
         btn_login.setObjectName("login_btn")
-        btn_login.setStyleSheet("#login_btn{background-color:#2c7adf;color:#A9A9A9;border:none;border-radius:4px;}")
+        btn_login.setStyleSheet("#login_btn{background-color:#2c7adf;color:white;border:none;border-radius:4px;}")
+
+        #self.setWindowFlag(QtCore.Qt.FramelessWindowHint)  # 隐藏边框
 
         fmlayout.addRow(lbl_workerid, led_workerid)
         fmlayout.addRow(lbl_pwd, led_pwd)
@@ -97,6 +110,7 @@ class LoginForm(QWidget):
 
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    ex = LoginForm()
+    app = QtWidgets.QApplication(sys.argv)
+    ui = LoginForm()
+    ui.show()
     sys.exit(app.exec_())

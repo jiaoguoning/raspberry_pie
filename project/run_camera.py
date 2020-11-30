@@ -1,3 +1,4 @@
+print('模块加载中......')
 import os
 from module.estimator import TfPoseEstimator
 import cv2
