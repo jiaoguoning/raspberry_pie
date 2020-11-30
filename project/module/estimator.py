@@ -126,20 +126,23 @@ class TfPoseEstimator:
     def draw_humans(npimg, humans):  #对于找到Human中已经找到的特征点在图片中进行描点
         image_h, image_w = npimg.shape[:2]
         centers = {}
+        human_points_sets = []
         for human in humans:
+            new = np.zeros((19, 2))
             for i in range(common.CocoPart.Background.value):
                 if i not in human.body_parts.keys():
                     continue
                 body_part = human.body_parts[i]
                 center = (int(body_part.x * image_w + 0.5), int(body_part.y * image_h + 0.5))
                 centers[i] = center
+                new[i, :] = center
                 cv2.circle(npimg, center, 5, common.CocoColors[i], thickness=-1, lineType=8, shift=0)
-
+            human_points_sets.append(new)
             for pair_order, pair in enumerate(common.CocoPairsRender):
                 if pair[0] not in human.body_parts.keys() or pair[1] not in human.body_parts.keys():
                     continue
                 cv2.line(npimg, centers[pair[0]], centers[pair[1]], common.CocoColors[pair_order], 3)
-        return npimg
+        return npimg, human_points_sets
 
     def inference(self, npimg, upsample_size=1.0):
         #这一步暂时不知道作用

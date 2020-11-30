@@ -5,9 +5,6 @@ import cv2
 import time
 print('模块加载完成......')
 
-
-
-
 '''运行部分'''
 print('开始运行......')
 def show_camera(args):
