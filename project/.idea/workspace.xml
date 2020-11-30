@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Windows/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_image.py" afterDir="false" />
-    </list>
+    <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,6 +269,7 @@
       <workItem from="1606570885807" duration="90000" />
       <workItem from="1606696073478" duration="12001000" />
       <workItem from="1606715774147" duration="5554000" />
+      <workItem from="1606723956196" duration="655000" />
     </task>
     <servers />
   </component>
