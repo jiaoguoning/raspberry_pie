@@ -20,14 +20,13 @@ def show_video(args):
     count = 0
     while ret_val :
         time1 = time.time()
-        if count%2 == 0:
+        if count%3 == 0:
             humans = e.inference(image, upsample_size=args['resize_out_ratio'])
             image = TfPoseEstimator.draw_humans(image, humans)
-            Humans = humans
             cv2.imshow('tf-pose-estimation result', image)   #显示标记结果
             print('fps:',time.time()-time1)
-        else:
-            cv2.imshow('tf-pose-estimation result', image)  # 显示标记结果
+        #else:
+            #cv2.imshow('tf-pose-estimation result', image)  # 显示标记结果
         count += 1
         cv2.waitKey(1)
         ret_val, image = cam.read()
@@ -51,6 +50,6 @@ def video(model_name,video_name):
         print('模型名称错误')
 
 #模型地址，原视频地址，保存视频的名称
-video('mobilenet_v2_small','广播体操.flv')
+video('mobilenet_thin','demo2.mp4')
 
 print('运行完成......')

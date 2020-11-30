@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_video.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.动作比较模块">
+  <component name="RunManager" selected="Python.run_video">
     <configuration name="导出视频" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_pose" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,10 +219,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.动作比较模块" />
+        <item itemvalue="Python.run_video" />
         <item itemvalue="Python.导出视频" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.run_video" />
         <item itemvalue="Python.run_image (1)" />
       </list>
     </recent_temporary>
@@ -269,6 +269,7 @@
       <workItem from="1606561087997" duration="4934000" />
       <workItem from="1606566963474" duration="3346000" />
       <workItem from="1606570885807" duration="90000" />
+      <workItem from="1606696073478" duration="247000" />
     </task>
     <servers />
   </component>
@@ -293,35 +294,35 @@
     </state>
     <state x="676" y="105" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1606295205952" />
     <state x="713" y="122" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1606466532536" />
-    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1606570991558">
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1606696428165">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606570991558" />
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606696428165" />
     <state width="1398" height="97" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1606570991558">
+    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1606696428165">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1606570991558" />
+    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1606696428165" />
     <state width="1398" height="97" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1606570991558">
+    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1606696428165">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1606570991558" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1606696428165" />
     <state width="1398" height="97" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1606570991558">
+    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1606696428165">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1606570991558" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1606696428165" />
     <state width="1398" height="97" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
     <state x="36" y="5" key="SettingsEditor" timestamp="1606552852477">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="36" y="5" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606552852477" />
     <state x="38" y="6" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1606548111470" />
-    <state x="29" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1606570886564">
+    <state x="29" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1606696075448">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606570886564" />
+    <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606696075448" />
     <state x="31" y="224" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1606544134233" />
     <state x="512" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606563023435">
       <screen x="0" y="0" width="1366" height="738" />
@@ -331,8 +332,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tf_pose$run.coverage" NAME="run Coverage Results" MODIFIED="1606276639919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tf_pose$test.coverage" NAME="test Coverage Results" MODIFIED="1606283488520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
-    <SUITE FILE_PATH="coverage/project$run_video.coverage" NAME="run_video Coverage Results" MODIFIED="1606556518259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$main.coverage" NAME="main Coverage Results" MODIFIED="1606567707050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/project$run_video.coverage" NAME="run_video Coverage Results" MODIFIED="1606696428152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$.coverage" NAME="动作比较模块 Coverage Results" MODIFIED="1606570928434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606466699651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tf_pose$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606289937519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
