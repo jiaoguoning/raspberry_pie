@@ -22,7 +22,7 @@ def show_video(args):
         time1 = time.time()
         if count%3 == 0:
             humans = e.inference(image, upsample_size=args['resize_out_ratio'])
-            image = TfPoseEstimator.draw_humans(image, humans)
+            image = TfPoseEstimator.draw_humans(image, humans)[0]
             cv2.imshow('tf-pose-estimation result', image)   #显示标记结果
             print('fps:',time.time()-time1)
         #else:

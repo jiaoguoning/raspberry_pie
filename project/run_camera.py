@@ -21,7 +21,7 @@ def show_camera(args):
         if count%3 == 0 :
             time1 = time.time()
             humans = e.inference(image, upsample_size=args['resize_out_ratio'])
-            image = TfPoseEstimator.draw_humans(image, humans)
+            image = TfPoseEstimator.draw_humans(image, humans)[0]
             cv2.imshow('tf-pose-estimation result', image)
             print('fps:',time.time()-time1)
         count += 1
