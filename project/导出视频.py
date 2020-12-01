@@ -54,6 +54,6 @@ def video(model_name,video_name,video_label):
         print('模型名称错误')
 
 #模型地址，原视频地址，保存视频的名称
-#video('mobilenet_thin','demo2.mp4','demo2.avi')
+video('mobilenet_thin','demo1.mp4','demo1.avi')
 
 print('运行完成......')

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/module/evaluation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/main_body.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/main_body.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/导出视频.py" beforeDir="false" afterPath="$PROJECT_DIR$/导出视频.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +31,39 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/run_image.py" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
-  <component name="RunManager" selected="Python.main_body">
+  <component name="RunManager" selected="Python.run_image">
+    <configuration name="导出视频" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/导出视频.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="动作比较模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_pose" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,64 +108,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="动作比较模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
+    <configuration name="evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/动作比较模块.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Windows" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Windows/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main_body" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Windows" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Windows/main_body.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/evaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,15 +131,15 @@
       <method v="2" />
     </configuration>
     <configuration name="register" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
+      <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\jiaoguoning\PycharmProjects\untitled1\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Windows" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -174,15 +153,15 @@
       <method v="2" />
     </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
+      <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\jiaoguoning\PycharmProjects\untitled1\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Windows" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -196,15 +175,15 @@
       <method v="2" />
     </configuration>
     <configuration name="run_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_pose" />
+      <module name="project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\jiaoguoning\PycharmProjects\untitled1\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -219,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main_body" />
-        <item itemvalue="Python.run" />
         <item itemvalue="Python.run_image" />
+        <item itemvalue="Python.evaluation" />
+        <item itemvalue="Python.导出视频" />
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.register" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +252,11 @@
       <workItem from="1606696073478" duration="12001000" />
       <workItem from="1606715774147" duration="5554000" />
       <workItem from="1606723956196" duration="2824000" />
+      <workItem from="1606787936368" duration="75000" />
+      <workItem from="1606788020873" duration="208000" />
+      <workItem from="1606788257905" duration="16000" />
+      <workItem from="1606788495059" duration="1566000" />
+      <workItem from="1606790277662" duration="10447000" />
     </task>
     <servers />
   </component>
@@ -292,61 +276,78 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="117" y="121" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1606304630843" />
-    <state x="713" y="122" key="FileChooserDialogImpl" timestamp="1606466532536">
+    <state x="438" y="79" key="#main_body" timestamp="1606788617969">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="438" y="79" key="#main_body/0.0.1440.860@0.0.1440.860" timestamp="1606788617969" />
+    <state x="438" y="79" key="#register" timestamp="1606788769052">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="438" y="79" key="#register/0.0.1440.860@0.0.1440.860" timestamp="1606788769052" />
+    <state x="438" y="79" key="#run" timestamp="1606788831641">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="438" y="79" key="#run/0.0.1440.860@0.0.1440.860" timestamp="1606788831641" />
+    <state x="438" y="79" key="#run_image" timestamp="1606788545237">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="438" y="79" key="#run_image/0.0.1440.860@0.0.1440.860" timestamp="1606788545237" />
+    <state x="713" y="122" key="FileChooserDialogImpl" timestamp="1606788538116">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="676" y="105" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1606295205952" />
-    <state x="713" y="122" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1606466532536" />
-    <state width="1323" height="158" key="GridCell.Tab.0.bottom" timestamp="1606730789704">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="713" y="122" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1606788538116" />
+    <state width="1398" height="170" key="GridCell.Tab.0.bottom" timestamp="1606826184036">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1323" height="158" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1606730789704" />
-    <state width="1398" height="97" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1323" height="158" key="GridCell.Tab.0.center" timestamp="1606730789704">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1398" height="170" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1606826184036" />
+    <state width="1398" height="170" key="GridCell.Tab.0.center" timestamp="1606826184036">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1323" height="158" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1606730789704" />
-    <state width="1398" height="97" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1323" height="158" key="GridCell.Tab.0.left" timestamp="1606730789704">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1398" height="170" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1606826184036" />
+    <state width="1398" height="170" key="GridCell.Tab.0.left" timestamp="1606826184036">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1323" height="158" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1606730789704" />
-    <state width="1398" height="97" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state width="1323" height="158" key="GridCell.Tab.0.right" timestamp="1606730789704">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1398" height="170" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1606826184036" />
+    <state width="1398" height="170" key="GridCell.Tab.0.right" timestamp="1606826184036">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1323" height="158" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1606730789704" />
-    <state width="1398" height="97" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1606549532154" />
-    <state x="36" y="5" key="SettingsEditor" timestamp="1606552852477">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1398" height="170" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1606826184036" />
+    <state x="38" y="6" key="SettingsEditor" timestamp="1606791385038">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="36" y="5" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606552852477" />
-    <state x="38" y="6" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1606548111470" />
-    <state x="29" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1606723957735">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="38" y="6" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1606791385038" />
+    <state x="31" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1606788256878">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606723957735" />
-    <state x="31" y="224" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1606544134233" />
+    <state x="31" y="224" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1606788256878" />
     <state x="512" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606720216540">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="512" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1606720216540" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tf_pose$test.coverage" NAME="test Coverage Results" MODIFIED="1606283488520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
+    <SUITE FILE_PATH="coverage/project$register.coverage" NAME="register Coverage Results" MODIFIED="1606788769064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
     <SUITE FILE_PATH="coverage/project$run_video.coverage" NAME="run_video Coverage Results" MODIFIED="1606696428152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606726795159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tf_pose$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606296192174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$register.coverage" NAME="register Coverage Results" MODIFIED="1606706160667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
-    <SUITE FILE_PATH="coverage/project$main_body.coverage" NAME="main_body Coverage Results" MODIFIED="1606730789693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
-    <SUITE FILE_PATH="coverage/tf_pose$run.coverage" NAME="run Coverage Results" MODIFIED="1606276639919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$main.coverage" NAME="main Coverage Results" MODIFIED="1606696740016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
-    <SUITE FILE_PATH="coverage/project$.coverage" NAME="动作比较模块 Coverage Results" MODIFIED="1606570928434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tf_pose$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606289937519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606452909268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tf_pose$pafprocess.coverage" NAME="pafprocess Coverage Results" MODIFIED="1606283519419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
-    <SUITE FILE_PATH="coverage/project$run.coverage" NAME="run Coverage Results" MODIFIED="1606729809324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
-    <SUITE FILE_PATH="coverage/project$run_image__1_.coverage" NAME="run_image (1) Coverage Results" MODIFIED="1606545525082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
     <SUITE FILE_PATH="coverage/project$run_camera.coverage" NAME="run_camera Coverage Results" MODIFIED="1606544711301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606814666858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tf_pose$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606296192174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$main.coverage" NAME="main Coverage Results" MODIFIED="1606696740016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/project$main_body.coverage" NAME="main_body Coverage Results" MODIFIED="1606788618009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/project$evaluation.coverage" NAME="evaluation Coverage Results" MODIFIED="1606813230992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
+    <SUITE FILE_PATH="coverage/project$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606452909268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tf_pose$test.coverage" NAME="test Coverage Results" MODIFIED="1606283488520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
+    <SUITE FILE_PATH="coverage/tf_pose$pafprocess.coverage" NAME="pafprocess Coverage Results" MODIFIED="1606283519419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module" />
+    <SUITE FILE_PATH="coverage/tf_pose$run.coverage" NAME="run Coverage Results" MODIFIED="1606276639919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$.coverage" NAME="导出视频 Coverage Results" MODIFIED="1606807378999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$run_image__1_.coverage" NAME="run_image (1) Coverage Results" MODIFIED="1606545525082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project" />
+    <SUITE FILE_PATH="coverage/tf_pose$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1606289937519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$run.coverage" NAME="run Coverage Results" MODIFIED="1606788831658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
   </component>
 </project>
