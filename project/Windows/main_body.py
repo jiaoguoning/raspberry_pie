@@ -1,7 +1,7 @@
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import pyqtSlot,Qt
 from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QApplication,QFileDialog,QMessageBox
+from PyQt5.QtWidgets import QApplication,QFileDialog,QMessageBox,QLabel
 import qtawesome
 import cv2
 import os
@@ -33,6 +33,7 @@ class MainUi(QtWidgets.QMainWindow):
         self.left_close.clicked.connect(self.closes)
         self.left_visit.clicked.connect(self.big)
         self.left_mini.clicked.connect(self.mini)
+        self.setWindowIcon(QIcon('./resoure/image/瑜伽.png'))
 
     def initUI(self):
 
@@ -125,23 +126,60 @@ class MainUi(QtWidgets.QMainWindow):
         self.right_layout = QtWidgets.QGridLayout()
         self.right_widget.setLayout(self.right_layout) # 设置右侧部件布局为网格
 
+        #self.right_widget.setStyleSheet('''background-color:rgb(155, 150, 100);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+        self.right_recommend_widget = QtWidgets.QWidget()  # 推荐封面部件
+        self.right_recommend_layout = QtWidgets.QGridLayout() # 推荐封面网格布局
+        self.right_recommend_widget.setLayout(self.right_recommend_layout)
+        self.right_layout.addWidget(self.right_recommend_widget)
+
+        #self.right_recommend_widget.setStyleSheet('''background-color:green;border-radius: 5px; color: rgb(255, 255, 255);''')
+
+        self.stats = 'first'
+
+        self.right_ds_widget = QtWidgets.QWidget()  # 推荐封面部件
+        self.right_ds_layout = QtWidgets.QGridLayout() # 推荐封面网格布局
+        self.right_ds_widget.setLayout(self.right_ds_layout)
+        self.right_recommend_layout.addWidget(self.right_ds_widget,0,0,1,12)
+
+
+        self.right_ds_widget.setStyleSheet('''background-color:rgb(211,211,211);border-radius: 5px; color: rgb(255, 255, 255);''')
+
         DaoRu = QtWidgets.QToolButton()
         DaoRu.setText('导入视频')  # 设置按钮文本
         DaoRu.setIcon(QIcon('./resoure/image/文件导入.png'))  # 设置按钮图标
-        DaoRu.setIconSize(QtCore.QSize(100,50))  # 设置图标大小
+        DaoRu.setIconSize(QtCore.QSize(600,25))  # 设置图标大小
         DaoRu.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
-        self.right_layout.addWidget(DaoRu,0,0)
+        self.right_ds_layout.addWidget(DaoRu)
         DaoRu.clicked.connect(self.add_video)
+
+        self.right_d_widget = QtWidgets.QWidget()  # 推荐封面部件
+        self.right_d_layout = QtWidgets.QGridLayout() # 推荐封面网格布局
+        self.right_d_widget.setLayout(self.right_d_layout)
+        self.right_recommend_layout.addWidget(self.right_d_widget,2,0,10,12)
+
+        self.right_d_widget.setStyleSheet('''background-color:rgb(211,211,211);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+        self.H = list()
+        for i in range(12):
+            right_H_widget = QtWidgets.QWidget()  # 推荐封面部件
+            right_H_layout = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            right_H_widget.setLayout(right_H_layout)
+            self.H.append(right_H_layout)
+            self.right_d_layout.addWidget(right_H_widget, i//4, i%4, 1, 1)
+            right_H_widget.setStyleSheet('''background-color:white;border-radius: 5px; color: rgb(255, 255, 255);''')
+
 
         self.recommend_button = list()
         path = '../resoure/video/模型标记视频/'
         videoss = [i for i in os.listdir(path) if i[-4:]=='.avi']
-        print(videoss)
         for i in range(len(videoss)):
             self.recommend_button.append(QtWidgets.QToolButton())
             recommend_button_ = self.recommend_button[-1]
-            recommend_button_.setText(videoss[i])  # 设置按钮文本
 
+            recommend_button_.clicked.connect(self.into)
+
+            recommend_button_.setText(videoss[i])  # 设置按钮文本
             cam = cv2.VideoCapture(path+videoss[i])
 
             #读取第二帧作为封面
@@ -154,9 +192,9 @@ class MainUi(QtWidgets.QMainWindow):
 
                 recommend_button_.setIconSize(QtCore.QSize(150, 100))  # 设置图标大小
                 recommend_button_.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
-                self.right_layout.addWidget(recommend_button_, i//4+1, i%4 )
+                self.H[i].addWidget(recommend_button_, 0,0,1,1)
 
-
+                recommend_button_.setStyleSheet('''background-color:rgb(169,169,169);border-radius: 5px; color: rgb(255, 255, 255);''')
 
         self.right_widget.setStyleSheet('''
             QWidget#right_widget{
@@ -208,26 +246,36 @@ class MainUi(QtWidgets.QMainWindow):
                 QMessageBox.information(self, "提示", "模型载入成功,用时:"+str(time.time()-times)+'s',QMessageBox.Yes)
 
                 path = '../resoure/video/模型标记视频/'
-                video = [i for i in os.listdir(path) if i[-4:] == '.avi']
+                videosssss = [i for i in os.listdir(path) if i[-4:] == '.avi']
 
-                t = QtWidgets.QToolButton()
-                t.setText(fullflname.split('.')[0]+'.avi')  # 设置按钮文本
+                if fullflname.split('.')[0]+'.avi'  not in videosssss:
 
-                print('../resoure/video/模型标记视频/'+fullflname.split('.')[0]+'.avi')
-                cam = cv2.VideoCapture('../resoure/video/模型标记视频/'+fullflname.split('.')[0]+'.avi')
-                # 读取第二帧作为封面
-                ret_val, image = cam.read()
-                ret_val, image = cam.read()
-                if ret_val:
-                    cv2.imwrite('./resoure/video_img/'+fullflname.split('.')[0]+'.jpg', image,
-                                [int(cv2.IMWRITE_PNG_COMPRESSION), 9])
-                    t.setIcon(QIcon('./resoure/video_img/'+fullflname.split('.')[0]+'.jpg'))  # 设置按钮图标
-                    t.setIconSize(QtCore.QSize(150, 100))  # 设置图标大小
-                    t.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
+                    t = QtWidgets.QToolButton()
 
-                    self.right_layout.addWidget(t, len(video)//4 + 1, len(video)%4)
-                    QApplication.processEvents()
-                    time.sleep(0.5)
+                    t.clicked.connect(self.into)
+
+                    t.setText(fullflname.split('.')[0]+'.avi')  # 设置按钮文本
+
+                    print('../resoure/video/模型标记视频/'+fullflname.split('.')[0]+'.avi')
+                    cam = cv2.VideoCapture('../resoure/video/模型标记视频/'+fullflname.split('.')[0]+'.avi')
+                    # 读取第二帧作为封面
+                    ret_val, image = cam.read()
+                    ret_val, image = cam.read()
+                    if ret_val:
+                        cv2.imwrite('./resoure/video_img/'+fullflname.split('.')[0]+'.jpg', image,
+                                    [int(cv2.IMWRITE_PNG_COMPRESSION), 9])
+                        t.setIcon(QIcon('./resoure/video_img/'+fullflname.split('.')[0]+'.jpg'))  # 设置按钮图标
+                        t.setIconSize(QtCore.QSize(150, 100))  # 设置图标大小
+                        t.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
+
+                        self.H[len(videosssss)].addWidget(t,0,0,1,1)
+
+                        t.setStyleSheet('''background-color:rgb(169,169,169);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+                        self.recommend_button.append(t)
+
+                        QApplication.processEvents()
+                        time.sleep(0.5)
             else:
                 QMessageBox.information(self, "提示", "原始视频文件夹中无此文件，请重新导入。", QMessageBox.Yes)
         else:
@@ -241,10 +289,57 @@ class MainUi(QtWidgets.QMainWindow):
         if self.windowState()==Qt.WindowMaximized:
             self.setWindowState(Qt.WindowNoState)
         else:
-            self.setWindowState(Qt.WindowMaximized)
+            self.setWindowState(Qt.WindowMazximized)
+
     @pyqtSlot()
     def mini(self):
         self.setWindowState(Qt.WindowMinimized)
+
+    @pyqtSlot()
+    def into(self):
+        self.right_recommend_widget.hide()
+        if self.stats != 'first':
+            self.right_recommend_widget_video.hide()
+        else:
+
+            self.right_recommend_widget_video = QtWidgets.QWidget()  # 推荐封面部件
+            self.right_recommend_layout_video = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            self.right_recommend_widget_video.setLayout(self.right_recommend_layout_video)
+            self.right_layout.addWidget(self.right_recommend_widget_video)
+
+            self.right_ps_widget = QtWidgets.QWidget()  # 推荐封面部件
+            self.right_ps_layout = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            self.right_ps_widget.setLayout(self.right_ps_layout)
+            self.right_recommend_layout_video.addWidget(self.right_ps_widget, 0, 0, 1, 5)
+
+            self.right_ps_widget.setStyleSheet(
+                '''background-color:rgb(211,211,211);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+            Dao = QtWidgets.QToolButton()
+            Dao.setText('回退')  # 设置按钮文本
+            Dao.setIcon(QIcon('./resoure/image/回退.png'))  # 设置按钮图标
+            Dao.setIconSize(QtCore.QSize(25,25))  # 设置图标大小
+            Dao.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
+            self.right_ps_layout.addWidget(Dao,0,0)
+            Dao.clicked.connect(self.back)
+            self.stats == 'second'
+
+            Daos = QtWidgets.QToolButton()
+            Daos.setIconSize(QtCore.QSize(600, 25))  # 设置图标大小
+            self.right_ps_layout.addWidget(Daos, 0, 1)
+
+            self.right_p_widget = QtWidgets.QWidget()  # 推荐封面部件
+            self.right_p_layout = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            self.right_p_widget.setLayout(self.right_p_layout)
+            self.right_recommend_layout_video.addWidget(self.right_p_widget, 1, 0, 10, 5)
+
+            self.right_p_widget.setStyleSheet(
+                '''background-color:rgb(211,211,211);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+    @pyqtSlot()
+    def back(self):
+        self.right_recommend_widget_video.hide()
+        self.right_recommend_widget.show()
 
 
 if __name__ == "__main__":

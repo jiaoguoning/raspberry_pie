@@ -1,11 +1,9 @@
 import sys
-import main_body as ma
 
-from PyQt5 import QtCore,QtGui,QtWidgets
-from PyQt5.QtCore import Qt,pyqtSlot,QCoreApplication
-from PyQt5.QtGui import QPixmap, QPainter, QColor, QFont, QIcon,QActionEvent
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QApplication, QLabel, QDesktopWidget, QHBoxLayout, QFormLayout, \
-    QPushButton, QLineEdit,QAction,QMessageBox
+from PyQt5 import QtWidgets,QtCore
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPixmap, QFont, QIcon
+from PyQt5.QtWidgets import QWidget,  QLabel, QDesktopWidget, QHBoxLayout, QFormLayout, QPushButton, QLineEdit
 
 
 class LoginForm(QWidget):
@@ -23,16 +21,18 @@ class LoginForm(QWidget):
         初始化UI
         :return:
         """
+        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)  # 隐藏边框
+
         self.setObjectName("loginWindow")
-        self.setStyleSheet('#loginWindow{background-color:#DCDCDC}')
+        self.setStyleSheet('#loginWindow{background-color:#DCDCDC;}')
         self.setFixedSize(650, 400)
         self.setWindowTitle("登录")
         self.setWindowIcon(QIcon('./resoure/image/瑜伽.png'))
 
-        self.text = "       智能AI瑜伽教练"
+        self.text = "          智能AI教练"
 
         # 添加顶部logo图片
-        pixmap = QPixmap("./resoure/image/背景.png")
+        pixmap = QPixmap("./resoure/image/灰色背景.jpg")
         scaredPixmap = pixmap.scaled(650, 140)
         label = QLabel(self)
         label.setPixmap(scaredPixmap)
@@ -54,7 +54,7 @@ class LoginForm(QWidget):
         hbox = QHBoxLayout()
         # 添加左侧logo
         logolb = QLabel(self)
-        logopix = QPixmap("./resoure/image/插画.jpg")
+        logopix = QPixmap("./resoure/image/锻炼.jpg")
         logopix_scared = logopix.scaled(200, 200)
         logolb.setPixmap(logopix_scared)
         logolb.setAlignment(Qt.AlignCenter)
