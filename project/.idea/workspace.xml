@@ -4,11 +4,8 @@
     <list default="true" id="08bcc833-c5fe-4014-8c0c-29b6ea87548d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Windows/main_body.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/main_body.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Windows/user_name.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/user_name.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/动作比较模块.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/导出视频.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Windows/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Windows/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/Windows/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,6 +253,7 @@
       <workItem from="1606715774147" duration="5554000" />
       <workItem from="1606723956196" duration="2824000" />
       <workItem from="1606807031790" duration="3274000" />
+      <workItem from="1606811766678" duration="311000" />
     </task>
     <servers />
   </component>
@@ -333,10 +331,10 @@
     </state>
     <state x="36" y="5" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1606552852477" />
     <state x="38" y="6" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1606548111470" />
-    <state x="29" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1606807031312">
+    <state x="29" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1606811768060">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606807031312" />
+    <state x="29" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1606811768060" />
     <state x="31" y="224" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1606544134233" />
     <state x="512" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606720216540">
       <screen x="0" y="0" width="1366" height="738" />
@@ -350,7 +348,7 @@
     <SUITE FILE_PATH="coverage/project$daochu.coverage" NAME="daochu Coverage Results" MODIFIED="1606809317646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tf_pose$run_image.coverage" NAME="run_image Coverage Results" MODIFIED="1606296192174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$register.coverage" NAME="register Coverage Results" MODIFIED="1606706160667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
-    <SUITE FILE_PATH="coverage/project$main_body.coverage" NAME="main_body Coverage Results" MODIFIED="1606810048528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
+    <SUITE FILE_PATH="coverage/project$main_body.coverage" NAME="main_body Coverage Results" MODIFIED="1606812053204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
     <SUITE FILE_PATH="coverage/tf_pose$run.coverage" NAME="run Coverage Results" MODIFIED="1606276639919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$main.coverage" NAME="main Coverage Results" MODIFIED="1606696740016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Windows" />
     <SUITE FILE_PATH="coverage/project$.coverage" NAME="导出视频 Coverage Results" MODIFIED="1606807688576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

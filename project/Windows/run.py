@@ -1,5 +1,5 @@
-from Windows.register import LoginForm
-from Windows.main_body import MainUi
+from register import LoginForm
+from main_body import MainUi
 
 # run.py
 

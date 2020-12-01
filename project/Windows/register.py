@@ -1,5 +1,5 @@
 import sys
-import Windows.main_body as ma
+import main_body as ma
 
 from PyQt5 import QtCore,QtGui,QtWidgets
 from PyQt5.QtCore import Qt,pyqtSlot,QCoreApplication

@@ -7,6 +7,8 @@ import cv2
 import os
 import time
 import shutil
+import sys
+sys.path.append("..")
 import daochu
 
 def film(model_name,video_name,video_label):
