@@ -56,4 +56,10 @@ def video(model_name,video_name,video_label):
         print('模型名称错误')
 
 #模型地址，原视频地址，保存视频的名称
+<<<<<<< HEAD:project/导出视频.py
+video('mobilenet_thin','demo1.mp4','demo1.avi')
+
+print('运行完成......')
+=======
 #video('mobilenet_thin','demo2.mp4','./resoure/video/模型标记视频/'+'demo2.avi')
+>>>>>>> d1cd463a322b88b1a99d63ef9e1f1e3e4427d19b:project/daochu.py
