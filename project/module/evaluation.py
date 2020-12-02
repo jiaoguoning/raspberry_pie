@@ -65,5 +65,7 @@ class human_vector:
             if i.like_equal(j, 30, 10):
                 continue
             else:
-                print(i.point)
-        return 'over'
+                if i.b[0] != 0 and i.b[1] != 0:
+                    print(i.point)
+                    print(i.b)
+        return
