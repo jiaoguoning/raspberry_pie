@@ -1,12 +1,14 @@
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtCore import pyqtSlot,Qt
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon,QImage, QPixmap
 from PyQt5.QtWidgets import QApplication,QFileDialog,QMessageBox,QLabel
 import qtawesome
 import cv2
 import os
 import time
 import shutil
+import matplotlib.pyplot as plt
+import threading
 import sys
 sys.path.append("..")
 import daochu
@@ -147,7 +149,7 @@ class MainUi(QtWidgets.QMainWindow):
 
         DaoRu = QtWidgets.QToolButton()
         DaoRu.setText('导入视频')  # 设置按钮文本
-        DaoRu.setIcon(QIcon('./resoure/image/文件导入.png'))  # 设置按钮图标
+        DaoRu.setIcon(QIcon('./resoure/image/import.png'))  # 设置按钮图标
         DaoRu.setIconSize(QtCore.QSize(600,25))  # 设置图标大小
         DaoRu.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
         self.right_ds_layout.addWidget(DaoRu)
@@ -172,20 +174,22 @@ class MainUi(QtWidgets.QMainWindow):
 
         self.recommend_button = list()
         path = '../resoure/video/模型标记视频/'
-        videoss = [i for i in os.listdir(path) if i[-4:]=='.avi']
-        for i in range(len(videoss)):
+        biaoji = [i for i in os.listdir(path) if i[-4:]=='.avi']
+        for i in range(len(biaoji)):
             self.recommend_button.append(QtWidgets.QToolButton())
             recommend_button_ = self.recommend_button[-1]
 
             recommend_button_.clicked.connect(self.into)
 
-            recommend_button_.setText(videoss[i])  # 设置按钮文本
-            cam = cv2.VideoCapture(path+videoss[i])
+            recommend_button_.setObjectName(biaoji[i])
 
+            recommend_button_.setText(biaoji[i])  # 设置按钮文本
+            cam = cv2.VideoCapture(path+biaoji[i])
             #读取第二帧作为封面
             ret_val, image = cam.read()
             ret_val, image = cam.read()
             if ret_val:
+                image = cv2.resize(image,(125,100))
                 cv2.imwrite('./resoure/video_img/img'+str(i)+'.jpg', image, [int(cv2.IMWRITE_PNG_COMPRESSION), 9])
 
                 recommend_button_.setIcon(QIcon('./resoure/video_img/img'+str(i)+'.jpg'))  # 设置按钮图标
@@ -238,17 +242,15 @@ class MainUi(QtWidgets.QMainWindow):
             shutil.copyfile(openfile_name[0], '../resoure/video/原始视频/'+fullflname)
             QMessageBox.information(self, "提示", "文件导入成功",QMessageBox.Yes)
             #训练视频
-            videossss = os.listdir('../resoure/video/原始视频/')
-            if fullflname in videossss:
+            yuanshi = os.listdir('../resoure/video/原始视频/')
+            biaoji = os.listdir('../resoure/video/模型标记视频')
+            if fullflname in yuanshi:
                 QMessageBox.information(self, "提示", "模型载入中，请稍等...")
                 times = time.time()
                 film('mobilenet_thin', fullflname , fullflname.split('.')[0]+'.avi')
                 QMessageBox.information(self, "提示", "模型载入成功,用时:"+str(time.time()-times)+'s',QMessageBox.Yes)
 
-                path = '../resoure/video/模型标记视频/'
-                videosssss = [i for i in os.listdir(path) if i[-4:] == '.avi']
-
-                if fullflname.split('.')[0]+'.avi'  not in videosssss:
+                if fullflname.split('.')[0]+'.avi'  not in biaoji:
 
                     t = QtWidgets.QToolButton()
 
@@ -256,19 +258,21 @@ class MainUi(QtWidgets.QMainWindow):
 
                     t.setText(fullflname.split('.')[0]+'.avi')  # 设置按钮文本
 
-                    print('../resoure/video/模型标记视频/'+fullflname.split('.')[0]+'.avi')
+                    t.setObjectName(fullflname.split('.')[0]+'.avi')
+
                     cam = cv2.VideoCapture('../resoure/video/模型标记视频/'+fullflname.split('.')[0]+'.avi')
                     # 读取第二帧作为封面
                     ret_val, image = cam.read()
                     ret_val, image = cam.read()
                     if ret_val:
+                        image = cv2.resize(image, (125, 100))
                         cv2.imwrite('./resoure/video_img/'+fullflname.split('.')[0]+'.jpg', image,
                                     [int(cv2.IMWRITE_PNG_COMPRESSION), 9])
                         t.setIcon(QIcon('./resoure/video_img/'+fullflname.split('.')[0]+'.jpg'))  # 设置按钮图标
                         t.setIconSize(QtCore.QSize(150, 100))  # 设置图标大小
                         t.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
 
-                        self.H[len(videosssss)].addWidget(t,0,0,1,1)
+                        self.H[len(biaoji)-1].addWidget(t,0,0,1,1)
 
                         t.setStyleSheet('''background-color:rgb(169,169,169);border-radius: 5px; color: rgb(255, 255, 255);''')
 
@@ -280,6 +284,7 @@ class MainUi(QtWidgets.QMainWindow):
                 QMessageBox.information(self, "提示", "原始视频文件夹中无此文件，请重新导入。", QMessageBox.Yes)
         else:
             QMessageBox.information(self, "提示", "文件不是mp4格式文件，请重新选择。", QMessageBox.Yes)
+
 
     @pyqtSlot()
     def closes(self):
@@ -297,11 +302,23 @@ class MainUi(QtWidgets.QMainWindow):
 
     @pyqtSlot()
     def into(self):
+        #打开视频
+        video_name = self.sender().objectName()
+        path = '../resoure/video/模型标记视频/'
+        file_path = path + video_name
+        #self.video = cv2.VideoCapture(path+video_name)
+        #self.ret_val1, self.image1 = self.video.read()
+        #self.ret_val1, self.image1 = self.video.read()
+
+        #打开摄像头对象
+        #self.camera = cv2.VideoCapture(0)
+        #ret_val2, image2 = self.video.read()
+
+        #页面加载
         self.right_recommend_widget.hide()
         if self.stats != 'first':
             self.right_recommend_widget_video.hide()
         else:
-
             self.right_recommend_widget_video = QtWidgets.QWidget()  # 推荐封面部件
             self.right_recommend_layout_video = QtWidgets.QGridLayout()  # 推荐封面网格布局
             self.right_recommend_widget_video.setLayout(self.right_recommend_layout_video)
@@ -317,7 +334,7 @@ class MainUi(QtWidgets.QMainWindow):
 
             Dao = QtWidgets.QToolButton()
             Dao.setText('回退')  # 设置按钮文本
-            Dao.setIcon(QIcon('./resoure/image/回退.png'))  # 设置按钮图标
+            Dao.setIcon(QIcon('./resoure/image/back.png'))  # 设置按钮图标
             Dao.setIconSize(QtCore.QSize(25,25))  # 设置图标大小
             Dao.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)  # 设置按钮形式为上图下文
             self.right_ps_layout.addWidget(Dao,0,0)
@@ -333,13 +350,188 @@ class MainUi(QtWidgets.QMainWindow):
             self.right_p_widget.setLayout(self.right_p_layout)
             self.right_recommend_layout_video.addWidget(self.right_p_widget, 1, 0, 10, 5)
 
-            self.right_p_widget.setStyleSheet(
-                '''background-color:rgb(211,211,211);border-radius: 5px; color: rgb(255, 255, 255);''')
+            self.right_p_widget.setStyleSheet('''background-color:rgb(211,211,211);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+
+
+
+            #底部暂停按键
+            self.right_an_widget = QtWidgets.QWidget()  # 推荐封面部件
+            self.right_an_layout = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            self.right_an_widget.setLayout(self.right_an_layout)
+            self.right_p_layout.addWidget(self.right_an_widget, 10, 0, 1, 2)
+
+            self.right_an_widget.setStyleSheet('''background-color:rgb(245,245,245);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+            #播放按键
+            self.right_process_bar = QtWidgets.QProgressBar()  # 播放进度部件
+            self.right_process_bar.setValue(0)
+            self.right_process_bar.setFixedHeight(3)  # 设置进度条高度
+            self.right_process_bar.setTextVisible(False)  # 不显示进度条文字
+
+            self.right_playconsole_widget = QtWidgets.QWidget()  # 播放控制部件
+            self.right_playconsole_layout = QtWidgets.QGridLayout()  # 播放控制部件网格布局层
+            self.right_playconsole_widget.setLayout(self.right_playconsole_layout)
+
+            self.console_button_1 = QtWidgets.QPushButton(qtawesome.icon('fa.backward', color='#F76677'), "")
+            self.console_button_2 = QtWidgets.QPushButton(qtawesome.icon('fa.forward', color='#F76677'), "")
+            self.console_button_3 = QtWidgets.QPushButton(qtawesome.icon('fa.play', color='#F76677', font=18), "")
+            self.console_button_4 = QtWidgets.QPushButton(qtawesome.icon('fa.pause', color='#F76677', font=18), "")
+
+            self.console_button_3.setIconSize(QtCore.QSize(30, 30))
+            self.console_button_4.setIconSize(QtCore.QSize(30, 30))
+
+
+            self.right_playconsole_layout.addWidget(self.console_button_1, 0, 0)
+            self.right_playconsole_layout.addWidget(self.console_button_2, 0, 2)
+            self.right_playconsole_layout.addWidget(self.console_button_4, 0, 1)
+            self.console_button_4.hide()
+            self.but_status = 'play'
+            self.right_playconsole_layout.addWidget(self.console_button_3, 0, 1)
+            self.right_playconsole_layout.setAlignment(QtCore.Qt.AlignCenter)  # 设置布局内部件居中显示
+
+            self.right_an_layout.addWidget(self.right_process_bar, 9, 0, 1, 9)
+            self.right_an_layout.addWidget(self.right_playconsole_widget, 10, 0, 1, 9)
+
+
+
+            #摄像头
+            self.right_she_widget = QtWidgets.QWidget()  # 推荐封面部件
+            self.right_she_layout = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            self.right_she_widget.setLayout(self.right_she_layout)
+            self.right_p_layout.addWidget(self.right_she_widget, 0 , 1, 9, 1)
+
+            self.right_she_widget.setStyleSheet('''background-color:rgb(245,245,245);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+            self.shexiang = QtWidgets.QLabel()
+            self.right_she_layout.addWidget(self.shexiang)
+
+            self.she = Display(self,file_path=None)
+
+
+            #标准视频
+            self.right_biao_widget = QtWidgets.QWidget()  # 推荐封面部件
+            self.right_biao_layout = QtWidgets.QGridLayout()  # 推荐封面网格布局
+            self.right_biao_widget.setLayout(self.right_biao_layout)
+            self.right_p_layout.addWidget(self.right_biao_widget, 0, 0, 9, 1)
+
+            self.right_biao_widget.setStyleSheet('''background-color:rgb(245,245,245);border-radius: 5px; color: rgb(255, 255, 255);''')
+
+            self.shiping = QtWidgets.QLabel()
+            self.right_biao_layout.addWidget(self.shiping)
+
+            self.dis = Display(self,file_path)
+            self.console_button_3.clicked.connect(self.open)
+            self.console_button_4.clicked.connect(self.close)
+
+
+
+
+
 
     @pyqtSlot()
     def back(self):
         self.right_recommend_widget_video.hide()
         self.right_recommend_widget.show()
+
+    @pyqtSlot()
+    def open(self):
+        self.console_button_3.hide()
+        self.console_button_4.show()
+        self.but_status = 'pause'
+        self.dis.Open()
+        self.she.Open()
+    @pyqtSlot()
+    def close(self):
+        self.console_button_4.hide()
+        self.console_button_3.show()
+        self.but_status = 'play'
+        self.dis.Close()
+        self.she.Close()
+
+
+    @pyqtSlot()
+    def backword(self):
+        pass
+    @pyqtSlot()
+    def forword(self):
+        pass
+
+
+
+class Display:
+    def __init__(self,ui,file_path=None):
+        self.ui = ui
+        # 默认视频源为相机
+        if file_path==None:
+            self.isCamera = True
+            self.cap = cv2.VideoCapture(0)
+            success, frame = self.cap.read()
+        else:
+            self.isCamera = False
+            self.file_path = file_path
+        # 创建一个关闭事件并设为未触发
+        self.stopEvent = threading.Event()
+        self.stopEvent.clear()
+
+    def Open(self):
+        self.x = 0
+        if not self.isCamera:
+            self.cap = cv2.VideoCapture(self.file_path)
+            self.frameRate = self.cap.get(cv2.CAP_PROP_FPS)
+            th = threading.Thread(target=self.Display)
+            th.start()
+            print('打开视频完成')
+        else:
+            th = threading.Thread(target=self.Display)
+            th.start()
+            print('开启摄像头完成')
+        # 创建视频显示线程
+
+
+
+    def Close(self):
+        # 关闭事件设为触发，关闭视频播放
+        self.stopEvent.set()
+
+    def Display(self):
+        while self.cap.isOpened():
+            if self.x > 3:
+                success, frame = self.cap.read()
+                # RGB转BGR
+                if success:
+                    frame = cv2.resize(frame,(300,300))
+                    frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+                    img = QImage(frame.data, frame.shape[1], frame.shape[0], QImage.Format_RGB888)
+                    if self.isCamera:
+                        imagess = QPixmap.fromImage(img)
+                        self.ui.shexiang.setPixmap(imagess)
+                    else:
+                        self.ui.shiping.setPixmap(QPixmap.fromImage(img))
+                        time.sleep(1/self.frameRate)
+
+                # 判断关闭事件是否已触发
+                if True == self.stopEvent.is_set():
+                    # 关闭事件置为未触发，清空显示label
+                    self.stopEvent.clear()
+                    if self.isCamera:
+                        self.ui.shexiang.clear()
+                    else:
+                        self.ui.shiping.clear()
+                    break
+            else:
+                path = './resoure/image/'
+                img = cv2.imread(path+str(3-self.x)+'.png')
+                frame = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+                imgae = QImage(frame.data, frame.shape[1], frame.shape[0], QImage.Format_RGB888)
+                self.ui.shexiang.setPixmap(QPixmap.fromImage(imgae))
+                self.ui.shiping.setPixmap(QPixmap.fromImage(imgae))
+                time.sleep(1)
+                self.ui.shexiang.clear()
+                self.ui.shiping.clear()
+                self.x += 1
+
+
 
 
 if __name__ == "__main__":

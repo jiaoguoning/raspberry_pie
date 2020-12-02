@@ -27,12 +27,12 @@ class LoginForm(QWidget):
         self.setStyleSheet('#loginWindow{background-color:#DCDCDC;}')
         self.setFixedSize(650, 400)
         self.setWindowTitle("登录")
-        self.setWindowIcon(QIcon('./resoure/image/瑜伽.png'))
+        self.setWindowIcon(QIcon('./resoure/image/yujia.png'))
 
         self.text = "          智能AI教练"
 
         # 添加顶部logo图片
-        pixmap = QPixmap("./resoure/image/灰色背景.jpg")
+        pixmap = QPixmap("./resoure/image/background.jpg")
         scaredPixmap = pixmap.scaled(650, 140)
         label = QLabel(self)
         label.setPixmap(scaredPixmap)
@@ -54,7 +54,7 @@ class LoginForm(QWidget):
         hbox = QHBoxLayout()
         # 添加左侧logo
         logolb = QLabel(self)
-        logopix = QPixmap("./resoure/image/锻炼.jpg")
+        logopix = QPixmap("./resoure/image/train.jpg")
         logopix_scared = logopix.scaled(200, 200)
         logolb.setPixmap(logopix_scared)
         logolb.setAlignment(Qt.AlignCenter)

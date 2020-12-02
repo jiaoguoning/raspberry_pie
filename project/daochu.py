@@ -20,6 +20,7 @@ def show_video(args,video_label):
     #写出到.mp4文件
     ret_val, image = cam.read()
     shape = (image.shape[1],image.shape[0])
+    #shape = (325,350)
     fourcc = cv2.VideoWriter_fourcc(*'MJPG')
     videoWrite = cv2.VideoWriter(video_label, fourcc, 20.0, shape)
     while ret_val :
@@ -27,6 +28,7 @@ def show_video(args,video_label):
             time1 = time.time()
             humans = e.inference(image, upsample_size=args['resize_out_ratio'])
             image = TfPoseEstimator.draw_humans(image, humans)[0]
+            image = cv2.resize(image, shape)
             videoWrite.write(image)  #输出到.mp4文件
             print('fps:',time.time()-time1,';',count)
 
